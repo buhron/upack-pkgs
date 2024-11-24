@@ -1,0 +1,7 @@
+[PKGCONFIG]
+NAME=helloworld
+DESC=helloworld
+DEPENDS=""
+[AUTHOR]
+AUTHOR=buhron
+LICENSE=""               
