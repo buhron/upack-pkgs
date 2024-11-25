@@ -1,2 +1,0 @@
-echo $@ | tee $CROSPACK_ROOT/repos
-echo "Repo added"
