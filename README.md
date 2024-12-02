@@ -1,6 +1,7 @@
-If you want to request to add a package, feel free to make a PR
-* Add extracted path (required) at `/packages/<packagename>/extracted/`
-* Add zipped file (this is optional) at `/packages/<packagename>/zipped/<zip file>`
-* Config file (required) at `/packages/<packagename/crospack-config/<version>-pkgconfig`
+If you want to request to add a package, feel free to make a PR <br />
+Update: As of 12/2/2024, crospack extracted packages are useless and they are therefore deprecated
+* ~~Add extracted path (required) at `/packages/<packagename>/extracted/`~~
+* Add zipped file ~~(this is optional)~~ (required) at `/packages/<packagename>/zipped/<zip file>`
+* Config file (required, TOML format) at `/packages/<packagename/zipped/<zip file>/crospack.cfg`
 * 8Gb Max
-* Shouldn't interfere with the system (for example, a script modifiying the UEFI firmware, if you want to publish a system-need package, feel free to do it at the crospack-uncheckedpkgs repo)
+
