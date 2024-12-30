@@ -10,7 +10,7 @@ An example of an config file of a package named `zapzip` would look like:
 {
  "name": "zapzip", # i shouldn't point this out, as its pretty obvious
  "desc": "A fake package used for an example config file for an package manager", # description of package. the description is not used by upack, but used for browsing packages.
- "arch": "x86_64" # architecture the package is compatible with. put all as the architecture if your package supports all architectures
+ "arch": "x86_64", # architecture the package is compatible with. put all as the architecture if your package supports all architectures
  "depends": [], # put dependencies here. upack will automatically install them
  "configuration_command": "zapzip init", # any shell command that configures the package for use. upack will automatically run this command once package is installed.
  "recommends": [], # recommended packages for zapzip (our example package) to work properly, or to maybe give more features to zipzap. upack will point out the recommended packages on pre-install.
