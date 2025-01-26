@@ -1,5 +1,5 @@
 If you want to request to add a package, feel free to make a PR <br />
-* Add zipped file (required) at `/packages/<packagename>/zipped/<zip file>`
+* Add zipped file (required) at `/pkgs/<packagename>/zipped/<zip file>`
 * Config file (required, JSON format) at `<zipped package>/upack.cfg`
 * 4 GB max for zipped archive
 * Packages that attack the system (viruses) or hardware will not be accepted.
@@ -11,7 +11,7 @@ An example of an config file of a package named `zapzip` would look like:
  "name": "zapzip", # i shouldn't point this out, as its pretty obvious
  "desc": "A fake package used for an example config file for an package manager", # description of package. the description is not used by upack, but used for browsing packages.
  "arch": "x86_64", # architecture the package is compatible with. put all as the architecture if your package supports all architectures
- "depends": [{"pkg":"zapzip-common","v":{"num":1,"type":"ge"}], # put dependencies here. upack will automatically install them
+ "depends": [{"pkg":"zapzip-common","v":{"num":1,"type":"ge"}], # put dependencies here. upack will automatically install them. remember that the letters version g is greater, ge is equal or greater, le is equal or less, l is less, and r is need for removal
  "configuration_command": "zapzip init", # any shell command that configures the package for use. upack will automatically run this command once package is installed.
  "recommends": [], # recommended packages for zapzip (our example package) to work properly, or to maybe give more features to zipzap. upack will point out the recommended packages on pre-install.
  "req_root": false, # whether the package requires root or not. some packages may need root to add system users or maybe... idk
