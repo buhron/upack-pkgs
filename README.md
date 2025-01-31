@@ -1,5 +1,5 @@
 If you want to request to add a package, feel free to make a PR <br />
-* Add zipped file (required) at `/pkgs/<packagename>/zipped/<zip file>`
+* Add zipped file (required) at `/pkgs/<packagename>/<zip file>`
 * Config file (required, JSON format) at `<zipped package>/upack.cfg`
 * 4 GB max for zipped archive
 * Packages that attack the system (viruses) or hardware will not be accepted.
