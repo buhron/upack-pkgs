@@ -2,6 +2,7 @@
   "packages": [
   {
     "name": "helloworld",
-    "where": "https://buhron.github.io/upack-pkgs/pkgs/helloworld/helloworld-1.0.0.upkg"
+    "supported_arch": ["x86_64"],
+    "versions": [1.0.0],
   }]
 } 
